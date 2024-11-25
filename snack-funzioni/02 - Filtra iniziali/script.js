@@ -4,10 +4,10 @@ const names = ["Anna", "Luca", "Marco", "Adele", "Laura", "Alessandra"];
 
 
 // Dichiara la funzione qui.
-function newArray(array) {
+function newArray(array, letter) {
   let initialName = [];
   for (let i = 0; i < array.length; i++){
-    if (array[i].includes('A')){
+    if (array[i][0] === letter){
       initialName.push(array[i]);
     }
   }
